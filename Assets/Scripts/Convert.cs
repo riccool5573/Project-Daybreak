@@ -20,7 +20,7 @@ public class Convert : MonoBehaviour
     [SerializeField]
     private NavMeshAgent agent;
     private bool Selected;
-    private UnityEngine.Vector3 selectionRange;
+    private Vector3 selectionRange;
 
 
     void Start()
@@ -66,17 +66,6 @@ public class Convert : MonoBehaviour
     
 
 }
-    public void SetHitPos(Vector3 pos)
-    {
-        hitPos = pos;
-    }
-    public Vector3 GetHitPos()
-    {
-        return hitPos;
-    }
-    public void Setagent(NavMeshAgent selected)
-    {
-        agent = selected;
-        Selected = true;
-    }
+
 }
+
